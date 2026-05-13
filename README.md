@@ -5,12 +5,12 @@
 **Date:** April 26, 2026  
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/3840px-Nextjs-logo.svg.png" alt="NextJS Logo" width="400">
+  <img src="https://blog.logrocket.com/wp-content/uploads/2021/01/Screen-Shot-2021-01-28-at-10.58.42-AM.png" alt="NextJS Logo" width="400">
 </div>
 
   <!-- Production Infrastructure Badges -->
-  [[Deployment - Live Web Application](https://jadogeri.github.io/lava_landing_page_nextjs/)
-  [[Code Repository - GitHub](https://github.com/jadogeri/lava_landing_page_nextjs)
+  [Deployment - Live Web Application](https://jadogeri.github.io/lava_landing_page_nextjs/)  
+  [Code Repository - GitHub](https://github.com/jadogeri/lava_landing_page_nextjs)
 
   ### 🌐 [Interactive Interface Live on GitHub Pages](https://jadogeri.github.io/lava_landing_page_nextjs/)
 
