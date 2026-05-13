@@ -23,7 +23,12 @@ This repository presents a fully modernized transformation of the classic **Lava
 
 By decoupling presentation layouts into modular React components, replacing broken template asset routing with environment variables, and utilizing automated GitHub Actions pipelines, this website compiles natively into clean, highly optimized static assets deployed straight through GitHub Pages.
 
+## Acknowledgments
+
+This website template was derived from the [Lava Landing Page](https://templatemo.com/tm-540-lava-landing-page) template by [TemplateMo](https://templatemo.com).
+
 ---
+
 
 ## 📍 Table of Contents
 
