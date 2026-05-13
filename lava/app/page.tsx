@@ -559,10 +559,6 @@ export default function Home() {
       </div>
     </div>
   </footer>
-  {/* jQuery */}
-  {/* Bootstrap */}
-  {/* Plugins */}
-  {/* Global Init */}
 </>
   );
 }
