@@ -7,9 +7,9 @@
 <div align="center">
 
   <!-- Production Infrastructure Badges -->
-  [![Deployment - Live Web Application](https://shields.io)](https://jadogeri.github.io/lava_landing_page_nextjs/)
-  [![Frontend Framework - Next.js](https://shields.io)](https://jadogeri.github.io/lava_landing_page_nextjs/)
-  [![Code Repository - GitHub](https://shields.io)](https://github.com/jadogeri/lava_landing_page_nextjs)
+  [![Deployment - Live Web Application](https://jadogeri.github.io/lava_landing_page_nextjs/)
+  [![Frontend Framework - Next.js](https://jadogeri.github.io/lava_landing_page_nextjs/)
+  [![Code Repository - GitHub](https://github.com/jadogeri/lava_landing_page_nextjs)
 
   ### 🌐 [Interactive Interface Live on GitHub Pages](https://jadogeri.github.io/lava_landing_page_nextjs/)
 
