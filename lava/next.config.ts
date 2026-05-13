@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   
   // Only apply the subdirectory prefix when building for GitHub Pages production
   basePath: isProd ? '/lava_landing_page_nextjs' : '',
+
+  // FORCE NEXT.JS TO ADD THE REPOSITORY NAME BEFORE /ASSETS/ AUTOMATICALLY
+  assetPrefix: isProd ? '/lava_landing_page_nextjs/' : '',
 };
 
 export default nextConfig;
