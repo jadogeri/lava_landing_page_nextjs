@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/dist/client/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,26 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}
+
+        {/* 1. Load jQuery first */}
+        <Script src="/assets/js/jquery-2.1.0.min.js" strategy="beforeInteractive" />
+
+        {/* 2. Load Bootstrap dependencies */}
+        <Script src="/assets/js/popper.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/bootstrap.min.js" strategy="beforeInteractive" />
+
+        {/* 3. Load Plugins */}
+        <Script src="/assets/js/owl-carousel.js" />
+        <Script src="/assets/js/scrollreveal.min.js" />
+        <Script src="/assets/js/waypoints.min.js" />
+        <Script src="/assets/js/jquery.counterup.min.js" />
+        <Script src="/assets/js/imgfix.min.js" />
+
+        {/* 4. Global Init (Runs last) */}
+        <Script src="/assets/js/custom.js" />
+        
+      </body>      
     </html>
   );
 }
