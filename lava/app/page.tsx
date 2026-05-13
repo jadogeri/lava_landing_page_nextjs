@@ -564,6 +564,5 @@ export default function Home() {
   {/* Plugins */}
   {/* Global Init */}
 </>
-
   );
 }
