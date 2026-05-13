@@ -1,16 +1,33 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  useEffect(() => {
+    // 2. This code runs after the page shows up
+    if (typeof window !== "undefined" && (window as any).$) {
+      const $ = (window as any).$;
+      
+      // Trigger ScrollReveal if it's loaded
+      if ((window as any).sr) {
+        (window as any).sr.reveal('.features-item', { duration: 1000 });
+      }
+
+      // Manually trigger your template's init function if it's in custom.js
+      // Often templates use $(window).on('load', ...) which won't fire in Next.js
+      $(window).trigger('resize'); 
+    }
+  }, []);
   return (
 <>
   {/* ***** Preloader Start ***** */}
-  <div id="preloader">
+  {/* <div id="preloader">
     <div className="jumper">
       <div />
       <div />
       <div />
     </div>
-  </div>
+  </div> */}
   {/* ***** Preloader End ***** */}
   {/* ***** Header Area Start ***** */}
   <header className="header-area header-sticky">

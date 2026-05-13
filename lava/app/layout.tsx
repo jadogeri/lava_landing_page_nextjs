@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Script from "next/dist/client/script";
+import Script from "next/script"; // Standard import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +27,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}
+    ><head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
 
+        <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" precedence="default" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css" precedence="default" />
+        <link rel="stylesheet" href="/assets/css/templatemo-lava.css" precedence="default" />
+        <link rel="stylesheet" href="/assets/css/owl-carousel.css" precedence="default" />
+      </head><body className="min-h-full flex flex-col">{children}
         {/* 1. Load jQuery first */}
         <Script src="/assets/js/jquery-2.1.0.min.js" strategy="beforeInteractive" />
 
@@ -38,16 +43,14 @@ export default function RootLayout({
         <Script src="/assets/js/bootstrap.min.js" strategy="beforeInteractive" />
 
         {/* 3. Load Plugins */}
-        <Script src="/assets/js/owl-carousel.js" />
-        <Script src="/assets/js/scrollreveal.min.js" />
-        <Script src="/assets/js/waypoints.min.js" />
-        <Script src="/assets/js/jquery.counterup.min.js" />
-        <Script src="/assets/js/imgfix.min.js" />
+        <Script src="/assets/js/owl-carousel.js" strategy="afterInteractive" />
+        <Script src="/assets/js/scrollreveal.min.js" strategy="afterInteractive" />
+        <Script src="/assets/js/waypoints.min.js" strategy="afterInteractive" />
+        <Script src="/assets/js/jquery.counterup.min.js" strategy="afterInteractive" />
+        <Script src="/assets/js/imgfix.min.js" strategy="afterInteractive" />
 
         {/* 4. Global Init (Runs last) */}
-        <Script src="/assets/js/custom.js" />
-        
-      </body>      
-    </html>
+        <Script src="/assets/js/custom.js" strategy="afterInteractive" />
+      </body></html>
   );
 }
