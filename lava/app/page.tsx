@@ -1,3 +1,12 @@
+/**
+ * @template     Lava Landing Page Template
+ * @version      1.0.0
+ * @author       Your Name / Company
+ * @description  Main landing page component built with Bootstrap and Next.js.
+ *               Handles visual sections, layout wrappers, and client-side 
+ *               jQuery initialization for legacy Bootstrap scripts.
+ */
+
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
